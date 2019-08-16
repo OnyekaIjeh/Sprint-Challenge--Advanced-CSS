@@ -1,1 +1,73 @@
 // Mixins Here
+#input {
+  .inputStyle(@size: @form-element-base-size) {
+    font-size: @size;
+    margin-bottom: 10px;
+    border: 1px solid @ebony-clay;
+    border-radius: .6em;
+    padding: .8em 8em;
+    display: inline-block;
+    @media @phone {
+      display: block;
+      width: 100%;
+      padding: 1.2em .8em;
+    }
+  }
+}
+
+#button {
+  .buttonStyle(@size: @form-element-base-size; @color: @porcelain; @background-color: @btn-bg-color) {
+    font-size: @size;
+    background-color: @background-color;
+    color: @color;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .6em;
+    padding: .8em .8em;
+    display: inline-block;
+    @media @phone {
+      display: block;
+      padding: 1.2em .8em;
+    }
+  }
+}
+
+.flex(@justify: start; @align: stretch; @direction: row; @wrap: wrap) {
+  display: flex;
+  flex-wrap: @wrap;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-content: @align;
+}
+
+.flash() {
+  @animation: flash 0.2s linear infinite alternate;
+  -webkit-animation: @animation;
+  -moz-animation: @animation;
+  animation: @animation;
+
+  .keyframes(flash; {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  );
+}
+
+.keyframes(@name; @arguments) {
+  @-moz-keyframes @name {
+    @arguments();
+  }
+
+  @-webkit-keyframes @name {
+    @arguments();
+  }
+
+  @keyframes @name {
+    @arguments();
+  }
+}

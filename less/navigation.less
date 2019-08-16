@@ -1,1 +1,31 @@
 // Navigation code here
+
+.nav {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: fade(@wild-sand, 50%);
+  border-bottom: 1px solid @waterloo;
+
+  h1 {
+    padding: 15px; 
+  }
+
+  ul {
+    .flex(space-around);
+    max-width: 400px;
+    margin: 0 auto;
+
+    li {
+      padding: 15px;
+            
+      a {
+        text-decoration: none;
+        color: inherit;
+        @media @phone {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
