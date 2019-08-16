@@ -24,3 +24,35 @@
   justify-content: @justify;
   align-content: @align;
 }
+
+.flash() {
+  @animation: flash 0.2s linear infinite alternate;
+  -webkit-animation: @animation;
+  -moz-animation: @animation;
+  animation: @animation;
+
+  .keyframes(flash; {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  );
+}
+
+.keyframes(@name; @arguments) {
+  @-moz-keyframes @name {
+    @arguments();
+  }
+
+  @-webkit-keyframes @name {
+    @arguments();
+  }
+
+  @keyframes @name {
+    @arguments();
+  }
+}
