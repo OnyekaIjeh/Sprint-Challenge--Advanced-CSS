@@ -168,9 +168,11 @@ a {
   margin: 0 auto;
 }
 .nav {
+  position: fixed;
+  width: 100%;
   text-align: center;
-  background-color: #F6F6F6;
-  border-bottom: 1px solid #F3F3F3;
+  background-color: rgba(246, 246, 246, 0.5);
+  border-bottom: 1px solid #81848E;
 }
 .nav h1 {
   padding: 15px;
@@ -205,6 +207,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 120px;
 }
 .home .intro img {
   width: 100%;
