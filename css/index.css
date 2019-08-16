@@ -177,7 +177,10 @@ a {
 }
 .nav ul {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
+  align-content: stretch;
   max-width: 400px;
   margin: 0 auto;
 }
@@ -287,6 +290,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     display: block;
+    padding: 1.2em 0.8em;
   }
 }
 .home .walk .walk-img {
