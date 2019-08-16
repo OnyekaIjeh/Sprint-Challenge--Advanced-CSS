@@ -102,4 +102,36 @@
       }
     }
   }
+  .form {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    .flex(center);
+
+    @media @phone {
+      padding: 15px;
+    }
+
+    .form-text {
+      width: 100%;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 26px;
+        .flash();
+      }
+
+      form {
+        input {
+          #input.inputStyle();
+        }
+        .btn {
+          #button.buttonStyle();
+        }
+      }
+    }
+  }
 }// home
