@@ -33,14 +33,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+- An adaptive website is one which only takes into consideration designing for a particular screen size using media queries and usually deals with using static units (e.g. pixels) for element sizing while a responsive website takes a whole lot more into consideration, including using responsive units (e.g. percentages) for dimensions of elements so it can be responsive across all screen sizes.
 
 2. Describe what it means to be mobile first vs desktop first.
+- Mobile first means designing for mobile screens first (smaller screens) and then making it responsive and taking into consideration larger screen sizes and upwards. It usually deals with using `min-width` for media queries to adapt to larger screen sizes.
+- Desktop first means designing for desktop screens first (larger screens) and then making it responsive and taking into consideration smaller screen sizes and downwards. It usually deals with using `max-width` for media queries to adapt to smaller screen sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+- Adding `font-size: 62.5%` to the `html` tag makes the default document font size to be `62.5% of 16px` which is `10px` and makes it easier to work with `rem` units since `rem` units are relative to the document font-size. For example, `2.2rem` becomes `22px` and `13px` can be achieved with `1.3rem` etc.
 
 4. How would you describe preprocessing to someone new to CSS?
+- Preprocessing is a way to add very new and cool features to CSS that makes it easier to work with and helps optimise efficiency and development time. They usually add new features to CSS that do not normally exist, like `mixins`, `nesting selector` and `inheritance selector` etc. Plus, you never have to worry about support becomes it compiles down to normal CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+- My favourite concept in preprocessing is `mixins` as it helps me not to be repetitive with defining certain styling.
+- So far, I have not had any issues with preprocessing, as it only adds new features for me and I can always write my regular CSS.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
