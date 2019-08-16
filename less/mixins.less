@@ -16,3 +16,11 @@
     }
   }
 }
+
+.flex(@justify: start; @align: stretch; @direction: row; @wrap: wrap) {
+  display: flex;
+  flex-wrap: @wrap;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-content: @align;
+}
