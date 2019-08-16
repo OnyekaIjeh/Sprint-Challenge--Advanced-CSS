@@ -1,1 +1,14 @@
 // Mixins Here
+
+#button {
+  .buttonStyle(@size: @form-element-base-size; @color: @porcelain; @background-color: @btn-bg-color) {
+    font-size: @size;
+    background-color: @background-color;
+    color: @color;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .6em;
+    padding: .8em .8em;
+    display: inline-block;
+  }
+}
